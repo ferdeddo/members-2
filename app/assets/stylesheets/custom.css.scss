@@ -4,6 +4,8 @@
 
 /* universal */
 
+
+
 body {
   padding-top: 60px;
 }
@@ -145,4 +147,11 @@ $gray-medium-light: #eaeaea;
   width: auto;
   margin-left: 0;
 }
-
+.trois
+{
+  text-align: center;
+  letter-spacing: 1px;
+  font-size: 3em;
+  font-weight: bold;
+  border: 5px solid black;
+}
