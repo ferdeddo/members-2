@@ -30,8 +30,9 @@
     <a href="http://www.railstutorial.org/">Ruby on Rails Tutorial</a>
     sample application.
   </h2>
+    <%= link_to "connect", login_path, class: "btn btn-lg btn-primary" %>
 
-  <%= link_to "Pages secret!", new_path, class: "btn btn-lg btn-primary" %>
+  <%= link_to "Create account", new_path, class: "btn btn-lg btn-primary" %>
 </div>
     <div class="container">
       <%= yield %>
