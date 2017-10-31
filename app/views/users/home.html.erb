@@ -1,18 +1,42 @@
-
-
- 
- 
-    <h1>Welcome to the Sample App</h1>
-
-    <h2>
-      This is the home page for the
-      <a href="http://railstutorial.org/">Ruby on Rails Tutorial</a>
-      sample application.
-    </h2>
-
-    <h3><%= link_to "Sign up now!", new_path, 
-                                class: "btn btn-large btn-primary" %>
-    </h3>
+<!DOCTYPE html>
+<html>
+  <head>
+    <%= csrf_meta_tags %>
+    <%= stylesheet_link_tag    'application', media: 'all',
+                                              'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <!--[if lt IE 9]>
+      <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/r29/html5.min.js">
+      </script>
+    <![endif]-->
+  </head>
+  <body>
+   <header class="navbar navbar-fixed-top navbar-inverse">
+  <div class="container">
+    <%= link_to "Members-2", root_path, id: "logo" %>
+    <nav>
+      <ul class="nav navbar-nav navbar-right">
+        <li><%= link_to "Home",   root_path %></li>
+        <li><%= link_to "Log in", new_path %></li>
+      </ul>
+    </nav>
   </div>
+</header>
+      <div class="center jumbotron">
+  <h1>Welcome to the Sample App</h1>
+
+  <h2>
+    This is the home page for the
+    <a href="http://www.railstutorial.org/">Ruby on Rails Tutorial</a>
+    sample application.
+  </h2>
+
+  <%= link_to "Pages secret!", new_path, class: "btn btn-lg btn-primary" %>
+</div>
+    <div class="container">
+      <%= yield %>
+    </div>
+  </body>
+</html>
 
   
